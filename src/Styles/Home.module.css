@@ -1,0 +1,129 @@
+.home_section {
+  width: 80vw;
+  /* height: 90vh; */
+  margin: auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+}
+.name_cont {
+  width: 50%;
+  height: 400px;
+  letter-spacing: 2px;
+  /* line-height: 80px; */
+  text-align: left;
+}
+.image_cont {
+  width: 50%;
+}
+.image_cont img {
+  width: 100%;
+}
+.name_cont p,
+.name_cont span {
+  font-size: 50px;
+  font-weight: 700;
+}
+.name_cont span {
+  color: teal;
+}
+.resume_div {
+  margin: 50px 10px;
+}
+.resume_div button {
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: teal;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resume_div button:hover {
+  transform: scale(1.01);
+  box-shadow: black;
+}
+@media screen and (min-width: 481px) and (max-width: 840px) {
+  .home_section {
+    display: block;
+    width: 80vw;
+    /* height: 90vh; */
+  }
+  .name_cont {
+    width: 80%;
+    height: 350px;
+    margin: auto;
+    letter-spacing: 1px;
+  }
+  .resume_div button {
+    margin-top: -18px;
+    width: 120px;
+  }
+  .image_cont {
+    width: 60%;
+    margin: auto 200px;
+    position: relative;
+    z-index: -1;
+    bottom: 40px;
+    right: 5px;
+  }
+  .image_cont img {
+    width: 100%;
+  }
+  .name_cont p,
+  .name_cont span {
+    font-size: 40px;
+    font-weight: 800;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 599px) {
+  .resume_div button {
+    margin-bottom: 48px;
+    width: 100px;
+    font-size: 15px;
+  }
+  .image_cont {
+    width: 60%;
+    margin: auto 200px;
+    position: relative;
+    z-index: -1;
+    bottom: 0px;
+    right: 35px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .home_section {
+    display: block;
+  }
+  .name_cont {
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  .image_cont {
+    width: 80%;
+    margin: auto;
+  }
+  .name_cont p,
+  .name_cont span {
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .resume_div button {
+    width: 80px;
+    height: 33px;
+    font-size: 13px;
+    padding: 5px;
+  }
+}

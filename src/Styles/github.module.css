@@ -1,0 +1,56 @@
+
+.github_section{
+    /* border: 1px solid black; */
+    width: 98vw;
+    padding: 2em;
+    text-align: center;
+}
+h1{
+    font-weight: 400;
+}
+span{
+    color: teal;
+    font-weight: 400;
+}
+.git{
+    margin-top: 1rem;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+ .stats {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.git img{
+    display: block;
+    max-width: 380px;
+}
+@media screen and (max-width:840px) {
+    .git{
+        margin-top: 0px;
+    }
+    .git img{
+        display: block;
+        max-width: 270px;
+    }
+}
+@media screen and (max-width:600px) {
+    .stats {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .git img{
+        display: block;
+        max-width: 250px;
+    }
+}

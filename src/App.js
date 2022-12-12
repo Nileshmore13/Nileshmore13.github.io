@@ -1,22 +1,24 @@
-import "./App.css"
-import { AboutSection } from "./Components/AboutSection"
-import { ContactSection } from "./Components/ContactSection"
-import { HeroSection } from "./Components/HeroSection"
-import { Navbar } from "./Components/Navbar"
-import { ProjectsSection } from "./Components/ProjectsSection"
-import { SkillsSection } from "./Components/SkillsSection"
+import './App.css';
+import About from './components/About';
+import Footer from './components/Footer';
+import Github from './components/Github';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      {/* <ProjectsSection /> */}
-      {/* <ContactSection /> */}
+      <Navbar/>
+      <Home/>
+      <About/>
+      <Skills/>
+      <Github/>
+      <Projects/>
+      <Footer/>
     </div>
-  )
+  );
 }
 
 export default App;

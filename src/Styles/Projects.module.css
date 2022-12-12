@@ -1,0 +1,92 @@
+*{
+    font-style: "Poppins", sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-weight: 400;
+}
+span{
+    text-align: center;
+    color: teal;
+}
+
+.desc{
+    text-align: center;
+    margin: 10px 0 60px 0 ;
+}
+.projects_container{
+    /* width: 80%; */
+    margin: 4rem auto;
+    padding: 1rem 0;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.projects_cards{
+    border: 1px solid teal;
+    max-width: 370px;
+    height: 470px;
+    padding: 0.5em;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.projects_img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.projects_info{
+    /* border: 1px solid red; */
+    height: 230px;
+    padding:1em 0;
+    display: grid;
+    gap: 1rem;
+    /* border: 1px solid black; */
+}
+.projects_buttons{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    font-size: medium;
+    font-weight: 400;
+    padding:0.7em 2.4em ;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: teal;
+    display: flex;
+    gap: 3px;
+    border: 1px solid teal;
+}
+button:hover{
+    /* transform: scale(1.1); */
+    transition: 0.3s ease-in-out;
+    background-color: teal;
+    color: white;
+}
+a>button>svg:hover{
+    color: white;
+}
+.icons{
+    width: 25px;
+    height: 25px;
+    color: rgb(39, 177, 177);
+}
+@media screen and (max-width:768px){
+    .projects_cards{
+        max-width: 425px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:330px){
+    .projects_cards{
+        width: 310px;
+    }
+}
